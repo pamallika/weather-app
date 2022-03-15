@@ -1,0 +1,32 @@
+form input,button{
+    font-family: Montsserat;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 3vh;
+}
+form {
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    color:white;
+    padding: 7px 0;
+    background: transparent;
+}
+
+button{
+    background: transparent;
+    padding: 5px;
+    color:white;
+    border: 2px solid #9b9b9b;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+button:active{
+    background-color:#9b9b9b;
+    transition: background-color .2s;
+}

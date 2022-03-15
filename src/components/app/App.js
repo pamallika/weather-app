@@ -1,7 +1,8 @@
 import React from 'react';
-import Info from './components/info';
-import Form from './components/form';
-import Weather from './components/weather';
+import Info from '../info/info';
+import Form from '../form/form';
+import Weather from '../weather/weather';
+import './App.css';
 
 
 const API_KEY="af8391a0c580c86280d9f069d211261e";
@@ -35,11 +36,13 @@ state={
 
     });
   }
+  e.target.reset();
   }
   render(){
     return(
-      <>
-        <Info/>
+      <div className="main">
+        <div className="text"><Info/></div>
+        <div className="form">
         <Form weatherMethod={this.gettingWeather}/>
         <Weather
           country={this.state.country}
@@ -47,7 +50,8 @@ state={
           temp={this.state.temp}
           error={this.state.error}
         />
-      </>
+        </div>
+      </div>
     )
   }
 }

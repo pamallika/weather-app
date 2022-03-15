@@ -1,0 +1,21 @@
+.main{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#222222;
+}
+
+.text{
+    position: relative;
+    background-image: url(../../../public/img/darknessday.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 3vh;
+    padding: 50px;
+}
+.form{
+    position: relative;
+    margin: 3vh;      
+}
